@@ -37,8 +37,8 @@ while True:
             if timeDiff > 2:
                 print('System is going to shutdown')
                 timeFirst = False
-                #GPIO.cleanup()
-                #os.system("sudo shutdown -h now")
+                GPIO.cleanup()
+                os.system("sudo shutdown -h now")
                 shutdownFired = True
 
     if not GPIO.input(27):
